@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="repeti&#231;&#227;o de cadastro"/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-28 02:44:57 "/>
+        <attribute name="created" value="QWx1bm87VVBMMi0xNkE7MjAyNS0wMi0yODsiMDc6NDg6MTYgIjsyMjE3"/>
+        <attribute name="edited" value="QWx1bm87VVBMMi0xNkE7MjAyNS0wMi0yODsiMDI6MTc6MzIgIjsxO0FsdW5vO1VQTDItMThBOzIwMjUtMDItMjE7IjA3OjQ3OjAwICI7Y8OzZGlnby5mcHJnOzU4NzQ="/>
+        <attribute name="edited" value="QWx1bm87VVBMMi0xNkE7MjAyNS0wMi0yODsiMDI6NDQ6NTcgIjsyOzIzMjI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="repeticao" type="Integer" array="False" size=""/>
+            <for variable="repeticao" start="1 " end="5" direction="inc" step="1">
+                <output expression="&quot;seja bem vindo ao sistema de cadastro de usuario&quot;" newline="True"/>
+                <output expression="&quot;por favor digite seu nome&quot;" newline="True"/>
+                <declare name="nome" type="String" array="False" size=""/>
+                <input variable="nome"/>
+                <output expression="&quot;escreva seu sobrenome&quot;" newline="True"/>
+                <declare name="sobrenome" type="String" array="False" size=""/>
+                <input variable="sobrenome"/>
+                <output expression="&quot;escreva seu cpf&quot;" newline="True"/>
+                <declare name="cpf" type="String" array="False" size=""/>
+                <input variable="cpf"/>
+                <output expression="&quot;VOC&#202; TEM TELEFONE FIXO?&quot;" newline="True"/>
+                <declare name="DECISAO" type="String" array="False" size=""/>
+                <input variable="DECISAO"/>
+                <if expression="DECISAO==&quot;tenho&quot;">
+                    <then>
+                        <output expression="&quot;escreva seu telefone.&quot;" newline="True"/>
+                        <declare name="telefone" type="String" array="False" size=""/>
+                        <input variable="telefone"/>
+                        <output expression="&quot;telefone digitado foi &quot; &amp; telefone" newline="True"/>
+                        <output expression="&quot;ok agora escreva sua idade&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;n&#227;o tem...&quot;" newline="True"/>
+                    </else>
+                </if>
+                <declare name="idade" type="Integer" array="False" size=""/>
+                <input variable="idade"/>
+                <output expression="&quot;escreva seu endere&#231;o&quot;" newline="True"/>
+                <declare name="endere&#231;o" type="String" array="False" size=""/>
+                <input variable="endere&#231;o"/>
+                <output expression="&quot;as informa&#231;&#245;es que voc&#234; deu est&#227;o abaixo:&quot;" newline="True"/>
+                <output expression="&quot;o nome mencionado foi &quot;  &amp; nome" newline="True"/>
+                <output expression="&quot;o sobrenome mencionado foi &quot;  &amp; sobrenome" newline="True"/>
+                <output expression="&quot;o cpf mencionado foi &quot;  &amp; cpf" newline="True"/>
+                <output expression="&quot;o endere&#231;o mencionado foi &quot;  &amp; endere&#231;o" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
